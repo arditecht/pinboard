@@ -431,7 +431,7 @@ function initPersistor(){
 	function init(){
 		if(dependency_success){
 			try{
-				dbPromise = self.idb.open('sdp-clientDB', 1, function(upgradeDb) {			// No i18N
+				dbPromise = self.idb.open('pinboard-clientDB', 1, function(upgradeDb) {			// No i18N
 					dependency_success = dependency_success && createObjectStores(upgradeDb);
 				});
 			} catch(err){
@@ -470,6 +470,4 @@ function initPersistor(){
 
 // initiate DB
 initPersistor();
-
-
 
