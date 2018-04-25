@@ -1,4 +1,8 @@
 var DB_SCHEMA = {
+	keyval: {
+		"keyPath": "sno",
+		"autoIncrement": true
+	}
 };
 
 
